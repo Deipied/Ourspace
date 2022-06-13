@@ -1,0 +1,11 @@
+#msg-container-1 {
+  display: grid;
+}
+
+#content-container {
+  display: gird;
+}
+
+#name-input {
+  grid-row-start: 1;
+}

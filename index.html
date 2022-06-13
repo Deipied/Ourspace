@@ -4,9 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>OurSpace</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <h1>Ourspace</h1>
   <p>"This is our new project"</p>
-  <body></body>
+  <body>
+    <form action="" id="content-container">
+      <label for="name-field">Title</label>
+      <input type="text" id="name-input" required />
+
+      <label for="Text-Area">Blog Post</label>
+      <textarea
+        style="resize: none"
+        name="thoughts"
+        id="text-input"
+        cols="80"
+        rows="6"
+        maxlength="300"
+        placeholder="What are your thoughts? (Max 300 characters)"
+      ></textarea>
+      <input type="button" value="submit" id="form-submit" />
+    </form>
+    <section id="msg-container-1"></section>
+
+    <script src="./public/main.js"></script>
+  </body>
 </html>
