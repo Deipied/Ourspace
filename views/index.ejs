@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OurSpace</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <h1>Ourspace</h1>
   <p>"This is our new project"</p>
@@ -37,7 +37,12 @@
 
           <span><%= posts[i]._id %></span>
           <button onclick="editBlogEntry(event)">Edit</button>
-          <button onclick="deleteBlogEntry(event)">Delete</button>
+          <button
+            onclick="deleteBlogEntry(event)"
+            unique_id="<%= posts[i]._id %>"
+          >
+            Delete
+          </button>
         </li>
         <% } %>
       </ul>
