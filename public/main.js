@@ -48,7 +48,7 @@ function editBlogEntry(event) {
 
   /* fetchings data from the surver then uploads the new data
 need to add a prompt to hold the variables to have the user input the information. 
-might need to use the this keyword to get the data 
+might need to use the this keyword to get the data gu=
 
 */
 }
