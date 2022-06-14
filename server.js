@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
-// const connectionString = "mongodb+srv://user_admin:password1234@cluster0.gv8ba.mongodb.net/?retryWrites=true&w=majority"
+const connectionString = "mongodb+srv://user_admin:password1234@cluster0.gv8ba.mongodb.net/?retryWrites=true&w=majority"
 
 let PORT = process.env.PORT || 3000
 
@@ -21,7 +21,7 @@ app.use(bodyParser.json())
 app.use(express.static('public'))
 
 // connection
-MongoClient.connect(process.env.CONNECTION_STRING, { useUnifiedTopology: true })
+MongoClient.connect(connectionString, { useUnifiedTopology: true })
   .then(client => {
     console.log('Connected to Database')
     const db = client.db('ourspace-posts')
