@@ -28,6 +28,8 @@ function formCard(event) {
   document.querySelector("#msg-container-1").appendChild(card);
 }
 
+console.log("Hello World");
+
 function editBlogEntry(event) {
   const newTitle = window.prompt("Please enter a new Title for your post.");
   const newThoughts = window.prompt("Please enter a new post.");
