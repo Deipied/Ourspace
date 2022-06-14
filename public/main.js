@@ -1,32 +1,32 @@
-function formCard(event) {
-  const card = document.createElement("div");
-  card.setAttribute("class", "card");
+// function formCard(event) {
+//   const card = document.createElement("div");
+//   card.setAttribute("class", "card");
 
-  card.innerHTML = `
-  <% for(var i = 0; i < posts.length; i++) {%>
-  <h4><%= posts[i].title %></h4>
-  <p> <%= posts[i].thoughts %></p>
-  <p><%= posts[i]._id %> </p>
-  <% } %>
-  `;
+//   card.innerHTML = `
+//   <% for(var i = 0; i < posts.length; i++) {%>
+//   <h4><%= posts[i].title %></h4>
+//   <p> <%= posts[i].thoughts %></p>
+//   <p><%= posts[i]._id %> </p>
+//   <% } %>
+//   `;
 
-  const buttonHolder = document.createElement("div");
-  buttonHolder.setAttribute("class", "buttons_holder");
+//   const buttonHolder = document.createElement("div");
+//   buttonHolder.setAttribute("class", "buttons_holder");
 
-  const cardEditBtn = document.createElement("button");
-  cardEditBtn.innerText = "Edit";
-  cardEditBtn.addEventListener("click", editBlogEntry);
+//   const cardEditBtn = document.createElement("button");
+//   cardEditBtn.innerText = "Edit";
+//   cardEditBtn.addEventListener("click", editBlogEntry);
 
-  const cardDeleteBtn = document.createElement("button");
-  cardDeleteBtn.innerText = "Delete";
-  cardDeleteBtn.onclick = deleteBlogEntry;
+//   const cardDeleteBtn = document.createElement("button");
+//   cardDeleteBtn.innerText = "Delete";
+//   cardDeleteBtn.onclick = deleteBlogEntry;
 
-  buttonHolder.appendChild(cardEditBtn);
-  buttonHolder.appendChild(cardDeleteBtn);
+//   buttonHolder.appendChild(cardEditBtn);
+//   buttonHolder.appendChild(cardDeleteBtn);
 
-  card.appendChild(buttonHolder);
-  document.querySelector("#msg-container-1").appendChild(card);
-}
+//   card.appendChild(buttonHolder);
+//   document.querySelector("#msg-container-1").appendChild(card);
+// }
 
 // console.log(posts);
 
@@ -34,6 +34,7 @@ function editBlogEntry(event) {
   const newTitle = window.prompt("Please enter a new Title for your post.");
   const newThoughts = window.prompt("Please enter a new post.");
 
+  // functionality for empty input
   const data = { id: this.event.target.getAttribute("unique_id"), title: newTitle, thoughts: newThoughts };
 
   fetch('/posts', {
