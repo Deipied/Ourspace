@@ -4,9 +4,11 @@ const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 const connectionString = "mongodb+srv://user_admin:password1234@cluster0.gv8ba.mongodb.net/?retryWrites=true&w=majority"
 
+let PORT = process.env.PORT || 3000
+
 // LISTEN
-app.listen(3000, function() {
-    console.log('listening on 3000')
+app.listen(PORT, function() {
+    console.log('listening on ', PORT)
   })
 
 // SET
