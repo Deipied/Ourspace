@@ -32,6 +32,11 @@
     float: right;
 }
 
+#form-container{
+  opacity: 0.8;
+  padding: 5px 5%;
+}
+
 #my_form{
     display: grid;
     align-content: center;
