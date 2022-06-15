@@ -4,14 +4,19 @@ body {
   height: 100%;
 }
 
-#header_container {
-  border: 3px solid darkolivegreen;
-  margin: auto;
-  width: 100%;
+#header_container{
+    border: 2px;
+    width: 100%;
+    background-color: #79DAE8;
+    margin-bottom: solid 5px #79DAE8;
 }
 
 .column {
   min-height: 1500px;
+}
+.navbar-brand.mb-0.h1{
+    color: #2155CD;
+    font-size: xx-large;
 }
 
 #left_div {
@@ -102,3 +107,12 @@ card {
   font-family: 'Amatic SC', cursive;
   font-size: x-large;
 }
+#my_footer{
+    background-color: #79DAE8;
+    text-align: center;
+    padding: 5rem;
+    box-sizing: border-box;
+    border: 0 solid;
+    font-size: 15px; 
+    margin: auto; 
+} 
