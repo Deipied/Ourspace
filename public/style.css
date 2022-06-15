@@ -3,6 +3,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 #header_container {
   border: 3px solid darkolivegreen;
   margin: auto;
@@ -26,6 +27,7 @@ body {
   height: 400px;
 }
 
+<<<<<<< HEAD
 #middle_div {
   width: 60%;
   float: left;
@@ -33,6 +35,14 @@ body {
 
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
+=======
+#middle_div{
+    width: 60%;
+    float: left;
+    background-color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+>>>>>>> 836ef7d65ca0e3704f4678453721fe013caeb13c
 }
 #h2 {
   color: deepskyblue;
@@ -75,6 +85,7 @@ body {
   grid-row-start: 1;
 }
 
+<<<<<<< HEAD
 #weather-container,
 img {
   width: 100%;
@@ -88,3 +99,11 @@ card {
   top: 30px;
   text-align: center;
 }
+=======
+#form-container {
+  color: #0AA1DD;
+  opacity: 0.9;
+  padding: 5px 12%;
+  margin-bottom: 20%;
+}
+>>>>>>> 836ef7d65ca0e3704f4678453721fe013caeb13c
