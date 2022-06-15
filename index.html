@@ -27,9 +27,9 @@
     <div id="middle_div" class="column">
       <h2>middle div</h2>
       <div id="my_form">
-        <form action="" id="content-container">
+        <form action="/posts" method="post" id="content-container">
           <label for="name-field">Title</label>
-          <input type="text" id="name-input" required /><br />
+          <input type="text" id="name-input" name="title" required /><br />
 
           <label for="Text-Area">Blog Post</label>
           <textarea
@@ -41,11 +41,24 @@
             maxlength="300"
             placeholder="What are your thoughts? (Max 300 characters)"
           ></textarea>
-          <input type="button" value="submit" id="form-submit" />
+          <button type="submit" id="form-submit">Submit</button>
         </form>
       </div>
       <div id="my_msg">
-        <section id="msg-container-1"></section>
+        <section id="msg-container-1">
+          <ul class="posts">
+            <!-- Loop through posts -->
+            <% for(var i = 0; i < posts.length; i++) {%>
+            <li class="post">
+              <span><%= posts[i].title %></span>:
+
+              <span><%= posts[i].thoughts %></span>
+
+              <span><%= posts[i]._id %></span>
+            </li>
+            <% } %>
+          </ul>
+        </section>
       </div>
     </div>
 

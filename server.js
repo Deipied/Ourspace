@@ -1,7 +1,9 @@
+require("dotenv").config();
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
+const {ObjectId} = require('mongodb');
 const connectionString = "mongodb+srv://user_admin:password1234@cluster0.gv8ba.mongodb.net/?retryWrites=true&w=majority"
 
 let PORT = process.env.PORT || 3000
@@ -48,7 +50,7 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
   // PUT, UPDATE EDIT BUTTON
   app.put('/posts', (req, res) => {
     postsCollection.findOneAndUpdate(
-      { title: 'test' },
+      { _id: ObjectId(req.body.id) },
       {
         $set: {
           title: req.body.title,
@@ -67,15 +69,13 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
   // DELETE, DELETE BUTTON
   app.delete('/posts', (req, res) => {
     postsCollection.deleteOne(
-      { title: req.body.title }
+      { _id: ObjectId(req.body.id) }
     )
     .then(result => {
-        // if (result.deletedCount === 0) {
-        //   return res.json('No quote to delete')
-        // }
         res.json(`Deleted the post`)
       })
-      .catch(error => console.error(error))
+      .catch(error => {
+      console.error(error)})
   })
 })
 .catch(error => console.error(error))
