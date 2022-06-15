@@ -3,6 +3,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 #header_container {
   border: 3px solid darkolivegreen;
   margin: auto;
@@ -30,10 +31,8 @@ body {
     width: 60%;
     float: left;
     background-color: aliceblue;
-    color: chartreuse;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-
 }
 #h2{
     color: deepskyblue;
@@ -74,4 +73,11 @@ body {
 
 #name-input {
   grid-row-start: 1;
+}
+
+#form-container {
+  color: #0AA1DD;
+  opacity: 0.9;
+  padding: 5px 12%;
+  margin-bottom: 20%;
 }
