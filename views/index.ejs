@@ -46,30 +46,6 @@
       </div>
       <div id="my_msg">
         <section id="msg-container-1">
-          <ul class="posts">
-            <!-- Loop through posts -->
-            <% for(var i = 0; i < posts.length; i++) {%>
-            <li class="post">
-              <span><%= posts[i].title %></span>:
-
-              <span><%= posts[i].thoughts %></span>
-
-              <span><%= posts[i]._id %></span>
-              <button
-                onclick="editBlogEntry(event)"
-                unique_id="<%= posts[i]._id %>"
-              >
-                Edit
-              </button>
-              <button
-                onclick="deleteBlogEntry(event)"
-                unique_id="<%= posts[i]._id %>"
-              >
-                Delete
-              </button>
-            </li>
-            <% } %>
-          </ul>
           <% for(var i = 0; i < posts.length; i++) {%>
           <div class="w-75 p-3" style="background-color: bisque">
             <div class="card" style="background-color: aliceblue">
