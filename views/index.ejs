@@ -26,7 +26,7 @@
 
     <div id="middle_div" class="column">
       <h2>middle div</h2>
-      <div id="my_form">
+      <!-- <div id="my_form">
         <form action="/posts" id="content-container" method="POST">
           <label for="name-field">Title</label>
           <input type="text" name="title" id="name-input" required />
@@ -43,7 +43,40 @@
           ></textarea>
           <button type="submit">Submit</button>
         </form>
+      </div> -->
+      <div id="form-container">
+        <form action="/posts" method="POST" id="bsform">
+          <div class="mb-3">
+            <label for="name-field" class="form-label">Your Name</label>
+            <input
+              name="name"
+              type="text"
+              class="form-control"
+              id="nameInput"
+              aria-describedby="nameHelp"
+              placeholder="Bob?"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="text" class="form-label">Post Title</label>
+            <input name="title" type="text" class="form-control" id="title" />
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Thoughts</label
+            >
+            <textarea
+              name="thoughts"
+              class="form-control"
+              id="thoughtsInput"
+              rows="4"
+              placeholder="What are your thoughts?"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
+
       <div id="my_msg">
         <section id="msg-container-1">
           <% for(var i = 0; i < posts.length; i++) {%>
