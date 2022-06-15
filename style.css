@@ -16,27 +16,50 @@
 
 #left_div{
     width: 20%;
-    background-color: teal;
     float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: chocolate;
+}
+#my_img{
+    position: relative;
+    width: 350px;
+    height: 400px;
 }
 
 #middle_div{
     width: 60%;
     float: left;
-    background-color: bisque;
+    background-color: aliceblue;
+    color: chartreuse;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+
+}
+#h2{
+    color: deepskyblue;
+}
+#p2{
+    color: blue;
+}
+#my_para{
+    color: darkslategray;
+    font-size: 20px;
 }
 
 #right_div{
     width: 20%;
-    background-color: teal;
     float: left;
+    color: gold;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #my_form{
     display: grid;
     align-content: center;
     background-color: darkslateblue;
-    opacity: 0.4;
+    opacity: 0.8;
     justify-content: center;
 }
 
