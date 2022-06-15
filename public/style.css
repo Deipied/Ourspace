@@ -31,14 +31,6 @@ body {
   float: right;
 }
 
-<<<<<<< HEAD
-#my_form {
-  display: grid;
-  align-content: center;
-  background-color: darkslateblue;
-  opacity: 0.4;
-  justify-content: center;
-=======
 #form-container{
   opacity: 0.8;
   padding: 5px 5%;
@@ -50,7 +42,6 @@ body {
     background-color: darkslateblue;
     opacity: 0.4;
     justify-content: center;
->>>>>>> hoon_dev
 }
 
 #msg-container-1 {
