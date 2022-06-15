@@ -1,13 +1,12 @@
- body{
-    margin: 0;
-    width: 100%;
-    height:100%;
-
-} 
-#header_container{
-    border: 3px solid darkolivegreen;
-    margin: auto;
-    width: 100%;
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+#header_container {
+  border: 3px solid darkolivegreen;
+  margin: auto;
+  width: 100%;
 }
 
 .column {
@@ -65,15 +64,14 @@
 
 #msg-container-1 {
   display: grid;
-
+  justify-items: center;
 }
 
 #content-container {
   display: gird;
   text-align: center;
-  
 }
 
 #name-input {
   grid-row-start: 1;
-} 
+}
