@@ -5,18 +5,24 @@
 
 } 
 #header_container{
-    border: 3px solid darkolivegreen;
-    margin: auto;
+    border: 2px;
     width: 100%;
+    background-color: #79DAE8;
+    margin-bottom: solid 5px #79DAE8;
 }
 
 .column {
   min-height: 1500px;
 }
+.navbar-brand.mb-0.h1{
+    color: #2155CD;
+    font-size: xx-large;
+}
 
 #left_div{
     width: 20%;
     float: left;
+    background-color: #E8F9FD;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 22px;
     color: chocolate;
@@ -31,7 +37,6 @@
     width: 60%;
     float: left;
     background-color: aliceblue;
-    color: chartreuse;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 
@@ -50,6 +55,7 @@
 #right_div{
     width: 20%;
     float: left;
+    background-color: #E8F9FD;
     color: gold;
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -58,7 +64,7 @@
 #my_form{
     display: grid;
     align-content: center;
-    background-color: darkslateblue;
+    background-color: #0AA1DD;
     opacity: 0.8;
     justify-content: center;
 }
@@ -76,4 +82,13 @@
 
 #name-input {
   grid-row-start: 1;
+}
+#my_footer{
+    background-color: #79DAE8;
+    text-align: center;
+    padding: 5rem;
+    box-sizing: border-box;
+    border: 0 solid;
+    font-size: 15px; 
+    margin: auto; 
 } 
