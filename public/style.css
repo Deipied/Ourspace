@@ -81,3 +81,8 @@ body {
   padding: 5px 12%;
   margin-bottom: 20%;
 }
+
+.card-title {
+  font-family: 'Amatic SC', cursive;
+  font-size: x-large;
+}
