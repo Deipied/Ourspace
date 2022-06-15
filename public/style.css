@@ -22,6 +22,7 @@ body {
 #left_div {
   width: 20%;
   float: left;
+  background-color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 22px;
   color: chocolate;
@@ -54,6 +55,7 @@ body {
 #right_div {
   width: 20%;
   float: left;
+  background-color: white;
   font-size: 10px;
   justify-content: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
