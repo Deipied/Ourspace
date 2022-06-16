@@ -23,7 +23,7 @@
     <div id="header_container">
       <nav id="nav_bar" class="navbar sticky-top">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">OurSpace</span>
+          <span class="navbar-brand mb-0 h1">OurSpace 👥</span>
         </div>
       </nav>
     </div>
@@ -85,7 +85,7 @@
 
       <div id="my_msg">
         <section id="msg-container-1">
-          <h3>Current Thoughts</h3>
+          <h3>Current Thoughts 🤔</h3>
           <% for(var i = 0; i < posts.length; i++) {%>
           <div class="w-75 p-3" style="background-color: aliceblue">
             <div class="card" style="background-color: #e8f9fd">
@@ -93,7 +93,6 @@
               <div class="card-body">
                 <h6 class="card-text"><%= posts[i].name %></h6>
                 <p class="card-title"><%= posts[i].thoughts %></p>
-
                 <button
                   class="btn btn-primary"
                   onclick="editBlogEntry(event)"
@@ -115,15 +114,19 @@
           <% } %>
         </section>
       </div>
+      <div id="my_footer">
+        <footer id="footer">Authors</footer>
+        <p>Cory, Hoon, Chris</p>
+        <p>
+          <a href="https://github.com/Deipied/Ourspace.git"
+            >Visit Ourspace@github.com!!</a
+          >
+        </p>
+      </div>
     </div>
 
     <div id="right_div" class="column">
       <div id="weather-container"></div>
-    </div>
-    <div id="my_footer">
-      <footer id="footer">Authors</footer>
-      <p>Cory, Hoon, Chris</p>
-      <p><a href= "https://github.com/Deipied/Ourspace.git">Visit Ourspace@github.com!!</a></p>
     </div>
 
     <script

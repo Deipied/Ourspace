@@ -1,7 +1,6 @@
 body {
   margin: 0;
   width: 100%;
-  height: 100%;
 }
 
 #header_container{
@@ -9,11 +8,13 @@ body {
     width: 100%;
     background-color: #79DAE8;
     margin-bottom: solid 5px #79DAE8;
+    padding: 1% 0% 1% 5%;
 }
 
 .column {
-  min-height: 1500px;
+  min-height: 100vmin;
 }
+
 .navbar-brand.mb-0.h1{
     color: #2155CD;
     font-size: xx-large;
@@ -39,6 +40,7 @@ body {
   background-color: aliceblue;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
+  height: fit-content;
 }
 
 #h2 {
@@ -72,6 +74,7 @@ body {
 #msg-container-1 {
   display: grid;
   justify-items: center;
+  padding-bottom: 15%;
 }
 
 #content-container {
@@ -90,11 +93,12 @@ img {
 
 #weather-container,
 card {
+  padding-left: 15%;
   margin: 10px;
 }
 #weather-container {
   position: sticky;
-  top: 30px;
+  top: 40px;
   text-align: center;
 }
 
@@ -102,19 +106,20 @@ card {
   color: #0AA1DD;
   opacity: 0.9;
   padding: 5px 12%;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
+  margin-top: 5%;
 }
 
 .card-title {
   font-family: 'Amatic SC', cursive;
   font-size: x-large;
 }
+
 #my_footer{
     background-color: #79DAE8;
     text-align: center;
-    padding: 5rem;
-    box-sizing: border-box;
-    border: 0 solid;
+    width: 100%;
     font-size: 15px; 
-    margin: auto; 
+    padding-top: 50px;
+    padding-bottom: 40px;
 } 
