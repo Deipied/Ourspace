@@ -93,7 +93,7 @@ function serializer() {}
 
 function getweather() {
   fetch(
-    "http://api.weatherapi.com/v1/current.json?key=1ab36ecbfc554103bf8192258221506&q=auto:ip&aqi=no"
+    "https://api.weatherapi.com/v1/current.json?key=1ab36ecbfc554103bf8192258221506&q=auto:ip&aqi=no"
   )
     .then((res) => res.json())
     .then((data) => renderData(data));
